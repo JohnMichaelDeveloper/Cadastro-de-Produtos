@@ -13,7 +13,7 @@ namespace ControleVD.Data.Migrations
                 name: "Produto",
                 columns: table => new
                 {
-                    Id = table.Column<string>(nullable: false).Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
+                    Id = table.Column<int>(nullable: false).Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
                     Descricao = table.Column<string>(maxLength: 256, nullable: true),
                    
                 },
